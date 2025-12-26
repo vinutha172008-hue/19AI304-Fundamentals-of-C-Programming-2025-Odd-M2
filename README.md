@@ -56,7 +56,30 @@
 ### Step 11:
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    float math, science, english, avg;
+    char grade;
+    scanf("%f", &math);
+    scanf("%f", &science);
+    scanf("%f", &english);
+    avg = (math + science + english) / 3.0f;
+    if (avg >= 90)
+        grade = 'A';
+    else if (avg >= 75)
+        grade = 'B';
+    else if (avg >= 50)
+        grade = 'C';
+    else
+        grade = 'F';
+    printf("\nAverage = %.2f\n", avg);
+    printf("Grade = %c\n", grade);
+    return 0;
+}
+```
 # Output:
+![alt text](m2-1.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -88,7 +111,19 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int i, num = 15;
+    printf("Multiplication Table of %d\n", num);
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+    return 0;
+}
+```
 # Output:
+![alt text](m2-2.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -131,7 +166,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+```
+#include<stdio.h>
+int main(){
+    int n,count=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+        if(count==2){
+            printf("%d is prime number.",n);
+        }else{
+            printf("%d is not a prime number.",n);
+        }
+    return 0;
+}
+```
 # Output:
+![alt text](m2-3.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -179,7 +233,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+int main()
+{
+    int i, j;
+    for (i = 1; i <= 5; i++)
+        printf("%d", i);
+    printf("\n");
+    for (i = 2; i <= 4; i++){
+        printf("%d", i);
+        for (j = 1; j <= 3; j++)
+            printf(" ");
+        printf("%d\n", 6 - i);
+    }
+    for (i = 5; i >= 1; i--)
+        printf("%d", i);
+    return 0;
+}
+```
 # Output:
+![alt text](m2-4.png)
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -232,6 +306,28 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+# program:
+```
+#include <stdio.h>
+int main()
+{
+    int i, j;
+    printf("0\n");
+    for (i = 7; i >= 1; i--){
+        for (j = i; j <= 7; j++){
+            printf("%d ", j);
+        }
+        printf("0 ");
+        for (j = 7; j >= i; j--){
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+# output:
+![alt text](m2-5.png)
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
